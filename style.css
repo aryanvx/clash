@@ -1,0 +1,77 @@
+/*
+  style.css
+  Board layout, units, cards, towers, UI effects.
+  AI-generated baseline CSS.
+*/
+
+body {
+    background: #2d3544;
+    color: #fafafa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#board {
+    margin: 30px auto;
+    width: 840px;
+    height: 480px;
+    background: url('assets/images/board.png') center center no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+    box-shadow: 0 4px 25px #0008;
+    position: relative;
+}
+
+#player-hand {
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.card {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px;
+    background: #1d2132;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px #0007;
+}
+
+.card img {
+    width: 58px;
+    height: 58px;
+    border-radius: 8px;
+}
+
+.played-card img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+
+.tower, .unit {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+#elixir-bar {
+    margin: 14px auto;
+    width: 300px;
+    height: 24px;
+    background: #283c6a;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px #0075ff22;
+    overflow: hidden;
+    position: relative;
+}
+
+#elixir-fill {
+    background: linear-gradient(90deg, #a8dcff 0%, #3c6aff 100%);
+    height: 100%;
+    border-radius: 16px;
+    width: 0;
+    transition: width 0.2s;
+}
